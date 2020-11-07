@@ -248,7 +248,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 133, 133, .95), rgba(255,212,84, .95)), url(../img/hero-bg.jpg);
+    background: linear-gradient(rgba(53, 80, 80, 0.50), rgba(255,212,84, .95)), url(../img/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -539,6 +539,13 @@ a:focus {
 
 .about .about-text a.btn {
     margin-top: 15px;
+}
+
+.about .about-content a.btn {
+    color: #ffffff;
+}
+.about .about-content a.btn:hover {
+    color: #313131;
 }
 
 @media (max-width: 991.98px) {
@@ -1061,6 +1068,11 @@ transition: 1s;
     padding: 0;
     list-style: none;
 }
+.price .price-description h4 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
 
 .price .price-description ul li {
     padding: 0 0 20px 0;
@@ -1307,7 +1319,9 @@ transition: 1s;
     background: #ffffff;
 }
 
-
+.testimonial .testimonial-item h2{
+    color: #ffffff;
+}
 /*******************************/
 /********* Contact CSS *********/
 /*******************************/
@@ -1319,7 +1333,7 @@ transition: 1s;
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
+    background: url(../img/contact2.jpg) left center no-repeat;
     background-size: contain;
 }
 
