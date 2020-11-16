@@ -134,8 +134,7 @@ a:focus {
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
-    position: fixed;
-    width: 100%;
+    position: relative;
     transition: .5s;
     z-index: 999;
 }
@@ -247,7 +246,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 45px;
-    padding: 120px 0 60px 0;
+    padding: 120px 0 0 0;
     overflow: hidden;
     background: linear-gradient(rgba(53, 80, 80, 0.50), rgba(255,212,84, .95)), url(../img/hero-bg.jpg);
     background-position: center;
@@ -333,7 +332,7 @@ a:focus {
 
 @media (max-width: 991.98px) {
     .hero {
-        padding-top: 120px;
+        padding-top: 60px;
     }
     
     .hero .hero-content {
@@ -361,7 +360,7 @@ a:focus {
 
 @media (max-width: 767.98px) {
     .hero {
-        padding-top: 120px;
+        padding-top: 60px;
         padding-bottom: 60px;
     }
     
@@ -1528,15 +1527,6 @@ transition: 1s;
     justify-content: center;
 }
 
-.footer .footer-menu a {
-    color: #ffffff;
-}
-
-.footer .footer-menu a:hover {
-    color: #414141;
-}
-
-
 .footer .footer-menu p {
     color: #ffffff;
     font-size: 22px;
@@ -1628,80 +1618,3 @@ transition: 1s;
         padding: 0 5px;
     }
 }
-
-
-/* Self designed icons */
-
-.icon-arduino {
-    background: url('../logo/arduino.png');
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 73px;
-    width: 72px;
-    display: inline-block;
-}
-.icon-opencv {
-    background: url('../logo/opencv.png');
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 73px;
-    width: 72px;
-    display: inline-block;
-}
-.icon-jupyter {
-    background: url('../logo/jupyter.png');
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 73px;
-    width: 72px;
-    display: inline-block;
-}
-.icon-tensorflow {
-    background: url('../logo/tensorflow.png');
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 73px;
-    width: 72px;
-    display: inline-block;
-}
-.icon-latex {
-    background: url('../logo/latex.png');
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 73px;
-    width: 72px;
-    display: inline-block;
-}
-.icon-matlab {
-    background: url('../logo/matlab.png');
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 73px;
-    width: 72px;
-    display: inline-block;
-}
-.icon-pytorch {
-    background: url('../logo/pytorch.png');
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 73px;
-    width: 72px;
-    display: inline-block;
-}
-.icon-jira {
-    background: url('../logo/jira.png');
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 73px;
-    width: 72px;
-    display: inline-block;
-}
-/* Self designed icons end */
