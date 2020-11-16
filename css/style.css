@@ -1686,6 +1686,15 @@ transition: 1s;
     width: 72px;
     display: inline-block;
 }
+.icon-spring {
+    background: url('../logo/spring-logo.svg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height: 73px;
+    width: 72px;
+    display: inline-block;
+}
 .icon-pytorch {
     background: url('../logo/pytorch.png');
     background-position: center; 
