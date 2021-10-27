@@ -1,0 +1,8 @@
+.btn-bordered {
+	box-sizing: content-box;
+	border: 1px solid #aaaaaa90;
+}
+
+a.breadcrumb::before {
+	color: currentColor;
+}
