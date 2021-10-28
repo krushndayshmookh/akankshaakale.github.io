@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 /* Body flex adjustment for  sticky footer */
 
 body {
@@ -167,6 +171,30 @@ span.tiny {
 
 .margined-bottom-cozy {
 	margin-bottom: 70px;
+}
+
+.margined-left-compact {
+	margin-left: 20px;
+}
+
+.margined-left-comfortable {
+	margin-left: 45px;
+}
+
+.margined-left-cozy {
+	margin-left: 70px;
+}
+
+.margined-right-compact {
+	margin-right: 20px;
+}
+
+.margined-right-comfortable {
+	margin-right: 45px;
+}
+
+.margined-right-cozy {
+	margin-right: 70px;
 }
 
 /* Image Modifiers */
