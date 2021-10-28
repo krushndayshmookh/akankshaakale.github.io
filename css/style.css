@@ -1,8 +1,68 @@
 .btn-bordered {
-	box-sizing: content-box;
-	border: 1px solid #aaaaaa90;
+  box-sizing: content-box;
+  border: 1px solid #aaaaaa90;
 }
 
 a.breadcrumb::before {
-	color: currentColor;
+  color: currentColor;
+}
+
+.glass {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(25px);
+}
+
+.glass.light {
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(25px);
+}
+
+.rounded {
+  border-radius: 16px;
+}
+
+body {
+  background: #74ebd5;
+  background: -webkit-linear-gradient(-45deg, #acb6e5, #74ebd5) fixed;
+  background: linear-gradient(-45deg, #acb6e5, #74ebd5) fixed;
+}
+
+nav {
+  transition: all 0.3s ease-in-out;
+}
+
+.brand-logo {
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+}
+
+.spacer-10 {
+  height: 10vh;
+  width: 100%;
+}
+
+.light-shadow {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
+}
+
+.bold {
+	font-weight: 500 !important;
+}
+
+.social-icon {
+	font-size: 2.5rem !important;
+	margin: 1rem;
+}
+
+.social-icon:hover {
+	color: #000 !important;
+}
+
+.contact-link {
+	font-size: 1.25rem !important;
+	margin-bottom: 0.9rem;
+}
+
+.intro-text {
+	font-size: 2.5rem !important;
 }
