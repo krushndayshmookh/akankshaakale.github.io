@@ -12,9 +12,9 @@ a.breadcrumb::before {
   backdrop-filter: blur(25px);
 }
 
-.glass.light {
-  background-color: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(25px);
+.glass-light {
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(15px);
 }
 
 .rounded {
@@ -42,27 +42,40 @@ nav {
 }
 
 .light-shadow {
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
 }
 
 .bold {
-	font-weight: 500 !important;
+  font-weight: 500 !important;
 }
 
 .social-icon {
-	font-size: 2.5rem !important;
-	margin: 1rem;
+  font-size: 2.5rem !important;
+  margin: 1rem;
 }
 
 .social-icon:hover {
-	color: #000 !important;
+  color: #000 !important;
 }
 
 .contact-link {
-	font-size: 1.25rem !important;
-	margin-bottom: 0.9rem;
+  font-size: 1.25rem !important;
+  margin-bottom: 0.9rem;
 }
 
 .intro-text {
-	font-size: 2.5rem !important;
+  font-size: 2.5rem !important;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.work-logo {
+  max-width: 104px !important;
 }

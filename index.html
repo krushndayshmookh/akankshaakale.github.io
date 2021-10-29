@@ -55,6 +55,12 @@
               </li>
 
               <li>
+                <a class="blue-grey-text text-darken-4" href="#coursework">
+                  Coursework
+                </a>
+              </li>
+
+              <li>
                 <a class="blue-grey-text text-darken-4" href="#experience">
                   Experience
                 </a>
@@ -101,6 +107,12 @@
 
         <li>
           <a class="blue-grey-text text-darken-4" href="#about"> About Me </a>
+        </li>
+
+        <li>
+          <a class="blue-grey-text text-darken-4" href="#coursework">
+            Coursework
+          </a>
         </li>
 
         <li>
@@ -220,11 +232,14 @@
           </div>
         </section>
 
-        <section id="about" class="section">
+        <section class="section">
           <div class="row">
             <div class="col s12">
-              <div class="card-panel z-depth-0 rounded padded-comfortable">
-                <h4 class="center light margined-bottom-comfortable">
+              <div
+                id="about"
+                class="card-panel z-depth-0 rounded padded-comfortable"
+              >
+                <h4 class="center margined-bottom-comfortable">
                   a <span class="indigo-text">little</span> about me
                 </h4>
 
@@ -261,6 +276,151 @@
                   blunt. However, most people find me amicable. I hope you
                   discover a different shade of me someday!
                 </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m5">
+              <div
+                id="coursework"
+                class="card-panel glass-light z-depth-0 rounded"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4">coursework</span>
+                </h4>
+
+                <div class="row no-margin">
+                  <div
+                    class="col-12"
+                    v-for="(work, index) in courseworks"
+                    :class="{ 'margined-bottom-compact': index != courseworks.length-1 }"
+                  >
+                    <div class="card glass-light rounded z-depth-0 no-margin">
+                      <div class="card-content">
+                        <span class="card-title">
+                          <i
+                            class="fas fa-graduation-cap margined-right-compact"
+                          ></i>
+                          {{ work.college }}
+                        </span>
+
+                        <div v-for="sem in work.semesters">
+                          <blockquote>
+                            {{ sem.time }} | {{ sem.name }}
+                          </blockquote>
+
+                          <div v-if="sem.courses && sem.courses.length">
+                            <p class="indigo-text bold margined-bottom-compact">
+                              Courses
+                            </p>
+                            <ul>
+                              <li v-for="course in sem.courses">
+                                {{ course.name }} &bull;
+                                <span class="grey-text">
+                                  {{ course.professor }}
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div v-if="sem.projects && sem.projects.length">
+                            <p class="indigo-text bold margined-bottom-compact">
+                              Projects
+                            </p>
+                            <ul class="no-margin-bottom">
+                              <li v-for="project in sem.projects">
+                                <span class="bold blue-grey-text">
+                                  {{ project.topic }}
+                                </span>
+                                <br />
+                                {{ project.title }}
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m7">
+              <div
+                id="experience"
+                class="card-panel glass-light z-depth-0 rounded"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4">experience</span>
+                </h4>
+
+                <div class="row no-margin">
+                  <div
+                    class="col-12"
+                    v-for="(experience, index) in experiences"
+                    :class="{ 'margined-bottom-compact': index != experiences.length-1 }"
+                  >
+                    <div class="card glass-light rounded z-depth-0 no-margin">
+                      <div
+                        class="card horizontal z-depth-0 no-margin transparent"
+                      >
+                        <div class="card-image" v-if="experience.logo">
+                          <img class="work-logo" :src="experience.logo" />
+                        </div>
+                        <div class="card-stacked">
+                          <div class="card-content no-padding">
+                            <div class="margined-compact">
+                              <span class="card-title">
+                                {{ experience.company }}
+                              </span>
+                              <p
+                                class="blue-grey-text"
+                                v-if="experience.location"
+                              >
+                                <i
+                                  class="
+                                    fas
+                                    fa-map-marker-alt
+                                    margined-right-compact
+                                  "
+                                ></i>
+                                {{ experience.location }}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="divider"></div>
+
+                      <div class="card-content">
+                        <ul class="no-margin">
+                          <li v-for="position in experience.positions">
+                            <h6>
+                              <span class="bold indigo-text">
+                                {{ position.title }}
+                              </span>
+                              <span
+                                class="blue-grey-text"
+                                v-if="position.dates"
+                              >
+                                &bull; {{ position.dates }}
+                              </span>
+                            </h6>
+                            <p v-html="position.description"></p>
+                            <p
+                              class="blue-grey-text"
+                              v-if="position.supervisor"
+                            >
+                              Supervisor: {{ position.supervisor }}
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
