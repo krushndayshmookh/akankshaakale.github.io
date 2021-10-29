@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/lib/fontawesome.min.css" />
     <link rel="stylesheet" href="/css/lib/dayshmookh.gradients.css" />
     <link rel="stylesheet" href="/css/lib/animate.min.css" />
+    <link rel="stylesheet" href="/css/lib/aos.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
 
@@ -156,10 +157,11 @@
                 src="/images/yuna.jpg"
                 alt="Akanksha Kale"
                 class="responsive-img circle"
+                data-aos="zoom-in"
               />
             </div>
 
-            <div class="col s12 center">
+            <div class="col s12 center" data-aos="fade-down">
               <h1 class="intro-text">
                 Hello! I'm
                 <span class="bold">Akanksha Kale</span>.
@@ -169,7 +171,7 @@
               </p>
             </div>
 
-            <div class="col s12 center margined-top-compact">
+            <div class="col s12 center margined-top-compact" data-aos="fade-up">
               <a
                 class="social-icon blue-grey-text"
                 href="mailto:akanksha.kale@outlook.com"
@@ -211,7 +213,7 @@
               </a>
             </div>
 
-            <div class="col s12 center">
+            <div class="col s12 center" data-aos="fade-down">
               <div class="spacer-10"></div>
 
               <a href="#about" class="white-text">
@@ -238,6 +240,7 @@
               <div
                 id="about"
                 class="card-panel z-depth-0 rounded padded-comfortable"
+                data-aos="zoom-in-up"
               >
                 <h4 class="center margined-bottom-comfortable">
                   a <span class="indigo-text">little</span> about me
@@ -285,6 +288,7 @@
               <div
                 id="coursework"
                 class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
               >
                 <h4 class="center margined-bottom-comfortable">
                   <span class="indigo-text text-darken-4">coursework</span>
@@ -296,7 +300,10 @@
                     v-for="(work, index) in courseworks"
                     :class="{ 'margined-bottom-compact': index != courseworks.length-1 }"
                   >
-                    <div class="card glass-light rounded z-depth-0 no-margin">
+                    <div
+                      class="card glass-light rounded z-depth-0 no-margin"
+                      data-aos="fade-down"
+                    >
                       <div class="card-content">
                         <span class="card-title">
                           <i
@@ -350,6 +357,7 @@
               <div
                 id="experience"
                 class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
               >
                 <h4 class="center margined-bottom-comfortable">
                   <span class="indigo-text text-darken-4">experience</span>
@@ -361,7 +369,10 @@
                     v-for="(experience, index) in experiences"
                     :class="{ 'margined-bottom-compact': index != experiences.length-1 }"
                   >
-                    <div class="card glass-light rounded z-depth-0 no-margin">
+                    <div
+                      class="card glass-light rounded z-depth-0 no-margin"
+                      data-aos="fade-down"
+                    >
                       <div
                         class="card horizontal z-depth-0 no-margin transparent"
                       >
