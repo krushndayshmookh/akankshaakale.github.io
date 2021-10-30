@@ -1,5 +1,7 @@
+let $vm = {}
+
 document.addEventListener('DOMContentLoaded', function () {
-  const vm_nav = new Vue({
+  $vm.nav = new Vue({
     el: '#nav',
     data: {
       backgroundClass: 'transparent',
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   })
 
-  const featured = new Vue({
+  $vm.featured = new Vue({
     el: '#featured',
     data: {
       carousel: null,
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     methods: {
       initCarouel() {
         let element = document.getElementById('featured-carousel')
-        console.log(element.clientWidth)
+
         this.carouselHeight = (element.clientWidth * 3) / 4
         this.carousel = M.Carousel.init(element, {
           fullWidth: true,
@@ -77,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   })
 
-  const vm_coursework = new Vue({
+  $vm.coursework = new Vue({
     el: '#coursework',
     data: {
       courseworks: [
@@ -119,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   })
 
-  const awards = new Vue({
+  $vm.awards = new Vue({
     el: '#awards',
     data: {
       awards: [
@@ -127,48 +129,54 @@ document.addEventListener('DOMContentLoaded', function () {
           event: 'Deloitte Spot Award for Automation',
           date: '2020',
           position: '1 amongst 500',
-          description: 'Was amongst the very first folks in my project to be recognized for Spot Award for impactful delivery of Automation Framework.',
+          description:
+            'Was amongst the very first folks in my project to be recognized for Spot Award for impactful delivery of Automation Framework.',
           icon: '/images/awards/prize.png',
         },
         {
           event: 'KPIT Sparkle Innovation Challenge ’19',
           date: '2019',
           position: 'Gold Medal | Finalist',
-          description: '\'Thought\' controlled Authentication system using EEG headset.',
+          description:
+            "'Thought' controlled Authentication system using EEG headset.",
           icon: '/images/awards/trophy.png',
         },
         {
           event: 'Smart India Hackthon 2019, IIT BHU',
           date: '2019',
           position: '3rd/250 | National',
-          description: 'Intelligent Digital Traffic Management/ Information System using Geo Coordinates',
+          description:
+            'Intelligent Digital Traffic Management/ Information System using Geo Coordinates',
           icon: '/images/awards/trophy.png',
         },
         {
           event: 'Singapore India Hackathon, NTU Singapore',
           date: '2018',
           position: '2nd Runner Up | International',
-          description: 'A smart solution to monitor and provide visibility on the availability of vacant car park lots within the campus.',
+          description:
+            'A smart solution to monitor and provide visibility on the availability of vacant car park lots within the campus.',
           icon: '/images/awards/trophy.png',
         },
         {
           event: 'Smart India Hackathon 2018, IIT BHU',
           date: '2018',
           position: 'Winner | National',
-          description: 'Collection, analysis, visualization of data regarding water usage and irrigation deficiencies from the data collected from farmers. Provide a platform for irrigation officials to optimize the water distribution in areas facing scarcity.',
+          description:
+            'Collection, analysis, visualization of data regarding water usage and irrigation deficiencies from the data collected from farmers. Provide a platform for irrigation officials to optimize the water distribution in areas facing scarcity.',
           icon: '/images/awards/trophy.png',
-        },  
+        },
         {
-          event: 'Prime Minister\'s Scholarship',
+          event: "Prime Minister's Scholarship",
           date: '2015-2019',
-          description:'This was awarded to me by the Ministry of Defense throughout my Undergraduate Studies for consistent all round performance in the filed of Computer Science.',
+          description:
+            'This was awarded to me by the Ministry of Defense throughout my Undergraduate Studies for consistent all round performance in the filed of Computer Science.',
           icon: '/images/awards/prize.png',
-        }
+        },
       ],
     },
   })
 
-  const vm_experience = new Vue({
+  $vm.experience = new Vue({
     el: '#experience',
     data: {
       experiences: [
@@ -272,6 +280,35 @@ document.addEventListener('DOMContentLoaded', function () {
               dates: 'Jan 2016 - April 2018',
             },
           ],
+        },
+      ],
+    },
+  })
+
+  $vm.publications = new Vue({
+    el: '#publications',
+    data: {
+      publications: [
+        {
+          title:
+            'A System and Method to Perform User Activity Using an Electroencephalogram',
+          journal: 'Indian Patent Office',
+          icon: '/images/publications/1.jpg',
+          link: '/docs/publications/1.pdf', // TODO: Add link
+        },
+        {
+          title:
+            'Recurrent Neural Networks on EEG based Classification for Brain Computer Interface.',
+          journal: 'Indian Patent Office',
+          icon: '/images/publications/2.jpg',
+          link: '/docs/publications/2.pdf', // TODO: Add link
+        },
+        {
+          title:
+            'A System and Method for Self-Adapting Virtual Structuring Of Unstructured Parking in Real-Time',
+          journal: 'Indian Patent Office',
+          icon: '/images/publications/3.jpg',
+          link: '/docs/publications/3.pdf', // TODO: Add link
         },
       ],
     },

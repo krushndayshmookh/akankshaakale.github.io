@@ -555,6 +555,48 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div
+              id="publications"
+              class="card-panel glass-light z-depth-0 rounded"
+              data-aos="fade-up"
+            >
+              <h4 class="center margined-bottom-comfortable">
+                <span class="indigo-text text-darken-4">publications</span>
+              </h4>
+
+              <div class="row no-margin">
+                <div
+                  class="col s12 m6 l4"
+                  v-for="(paper, index) in publications"
+                  :class="{ 'margined-bottom-compact': index != publications.length-1 }"
+                >
+                  <div
+                    class="card glass-light rounded z-depth-0 no-margin"
+                    data-aos="fade-down"
+                  >
+                    <div class="card-content center">
+                      <img class="paper-icon circle margined-bottom-compact" :src="paper.icon" />
+                    
+                      <span class="card-title">{{ paper.title }}</span>
+                      <p class="blue-grey-text">{{ paper.journal }}</p>
+                    </div>
+                    <div class="card-action center">
+                      <a
+                        class="btn-flat indigo white-text no-margin-strict"
+                        :href="paper.url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Abstract
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

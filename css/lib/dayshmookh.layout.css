@@ -137,6 +137,10 @@ span.tiny {
 	margin: 0;
 }
 
+.no-margin-strict {
+	margin: 0 !important;
+}
+
 .margined-compact {
 	margin: 20px;
 }

@@ -88,3 +88,8 @@ nav {
   padding-left: 15px;
   padding-top: 48px;
 }
+
+.paper-icon {
+  width: 128px;
+  height: 128px;
+}
