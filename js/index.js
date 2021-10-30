@@ -126,6 +126,14 @@ document.addEventListener('DOMContentLoaded', function () {
     data: {
       awards: [
         {
+          event: 'Deloitte GPS Game Changer Award',
+          date: '2021',
+          position: '1 in 5000',
+          description:
+            'For singlehandedly tailoring a custom framework alongside regular deliverables and acquiring additional revenue from the client',
+          icon: '/images/awards/prize.png',
+        },
+        {
           event: 'Deloitte Spot Award for Automation',
           date: '2020',
           position: '1 amongst 500',
