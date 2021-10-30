@@ -117,13 +117,13 @@
         </li>
 
         <li>
-          <a class="blue-grey-text text-darken-4" href="#experience">
-            Experience
-          </a>
+          <a class="blue-grey-text text-darken-4" href="#awards"> Awards </a>
         </li>
 
         <li>
-          <a class="blue-grey-text text-darken-4" href="#awards"> Awards </a>
+          <a class="blue-grey-text text-darken-4" href="#experience">
+            Experience
+          </a>
         </li>
 
         <li>
@@ -448,10 +448,21 @@
                         <div class="card-stacked">
                           <div class="card-content no-padding">
                             <div class="padded-compact">
-                              <span class="text-caption"> {{ award.date }} </span>
-                            <span class="card-title"> {{ award.event }} </span>
-                            <blockquote v-if="award.position" class="no-margin">{{ award.position }}</blockquote>
-                            <p class="grey-text padded-top-compact">{{ award.description }}</p>
+                              <span class="text-caption">
+                                {{ award.date }}
+                              </span>
+                              <span class="card-title">
+                                {{ award.event }}
+                              </span>
+                              <blockquote
+                                v-if="award.position"
+                                class="no-margin"
+                              >
+                                {{ award.position }}
+                              </blockquote>
+                              <p class="grey-text padded-top-compact">
+                                {{ award.description }}
+                              </p>
                             </div>
                           </div>
                         </div>
