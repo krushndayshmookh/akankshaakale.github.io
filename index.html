@@ -670,7 +670,11 @@
                       data-aos="fade-down"
                     >
                       <div class="card-image">
-                        <img :src="project.image" :alt="project.title" class="zoomer" />
+                        <img
+                          :src="project.image"
+                          :alt="project.title"
+                          class="zoomer"
+                        />
                       </div>
                       <div class="card-content center">
                         <span class="card-title">{{ project.title }}</span>
@@ -717,6 +721,105 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col s12">
+              <div
+                id="contact"
+                class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4"> contact me </span>
+                </h4>
+
+                <div class="row no-margin">
+                  <div class="col s12 m6">
+                    <div class="card glass-light rounded z-depth-0 no-margin">
+                      <div class="card-content">
+                        <ul class="flow-text no-overflow">
+                          <li class="valign-wrapper contact-link">
+                            <i class="social-icon fas fa-envelope"></i>
+                            <a href="mailto:akanksha.kale@outlook.com">
+                              akanksha.kale@outlook.com
+                            </a>
+                          </li>
+
+                          <li class="valign-wrapper contact-link">
+                            <i class="social-icon fas fa-envelope"></i>
+                            <a href="mailto:akkale@cs.stonybrook.edu">
+                              akkale@cs.stonybrook.edu
+                            </a>
+                          </li>
+
+                          <li class="valign-wrapper contact-link">
+                            <i class="social-icon fas fa-phone-alt"></i>
+                            <a href="tel:+16319614550">+16319614550</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m6">
+                    <div class="card glass-light rounded z-depth-0 no-margin">
+                      <div class="card-content">
+                        <div class="row no-margin">
+                          <div class="input-field col s12">
+                            <input
+                              type="text"
+                              id="input_name"
+                              v-model="contactInfo.name"
+                              autocomplete="name"
+                            />
+                            <label for="input_name">Your Name</label>
+                          </div>
+
+                          <div class="input-field col s12">
+                            <input
+                              type="tel"
+                              id="input_phone"
+                              v-model="contactInfo.phone"
+                              autocomplete="tel"
+                            />
+                            <label for="input_phone">Phone</label>
+                          </div>
+
+                          <div class="input-field col s12">
+                            <input
+                              type="email"
+                              id="input_email"
+                              v-model="contactInfo.email"
+                              autocomplete="email"
+                            />
+                            <label for="input_email">Email</label>
+                          </div>
+
+                          <div class="input-field col s12">
+                            <textarea
+                              class="materialize-textarea"
+                              id="input_message"
+                              v-model="contactInfo.message"
+                            ></textarea>
+                            <label for="input_message">Message</label>
+                          </div>
+
+                          <div class="col s12">
+                            <button
+                              class="btn-flat indigo white-text btn-large"
+                              @click="submitForm"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
@@ -730,6 +833,59 @@
         </div>
       </div>
     </footer>
+
+    <div id="waitoverlay">
+      <div class="full-height valign-wrapper">
+        <div class="full-width center">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="spinner-layer spinner-yellow">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="spinner-layer spinner-green">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="/js/lib/materialize.min.js"></script>

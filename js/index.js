@@ -511,4 +511,68 @@ document.addEventListener('DOMContentLoaded', function () {
       ],
     },
   })
+
+  $vm.contact = new Vue({
+    el: '#contact',
+    data: {
+      contactInfo: {
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      },
+    },
+
+    methods: {
+      submitForm() {
+        showWait()
+        const data = {
+          name: this.contactInfo.name,
+          email: this.contactInfo.email,
+          phone: this.contactInfo.phone,
+          message: this.contactInfo.message,
+        }
+
+        fetch('https://rootkings-mail-service.herokuapp.com/api/mail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            apiKey: '617d9c95c1dbc10004417a28',
+            subject: 'New Enquiry at akankshakale.com',
+            body: `
+              name: ${data.name} <br>
+              email: ${data.email} <br>
+              phone: ${data.phone} <br>
+              message: ${data.message}
+              `,
+          }),
+        })
+          .then(response => response.json())
+          .then(data => {
+            hideWait()
+
+            M.toast({
+              html: 'Your message has been received!',
+            })
+
+            this.contactInfo = {
+              name: '',
+              email: '',
+              phone: '',
+              message: '',
+            }
+          })
+          .catch(error => {
+            console.error(error)
+            hideWait()
+
+            M.toast({
+              html: 'Failed to send message. Please try again.',
+            })
+          })
+      },
+    },
+  })
 })
