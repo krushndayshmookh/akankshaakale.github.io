@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       headers: [
         'Singapore India Hackathon 2018',
-        'KPIT Sparkle 2019 - Grand Finale',
-        'Smart India Hackathon 2018 - Winner',
+        'KPIT Sparkle 2019',
+        'Smart India Hackathon 2018',
       ],
 
       activeHeader: 0,
