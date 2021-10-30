@@ -284,6 +284,68 @@
           </div>
 
           <div class="row">
+            <div class="col s12">
+              <div
+                id="featured"
+                class="card-panel glass-light z-depth-0 rounded"
+              >
+                <div class="row no-margin">
+                  <h4
+                    class="
+                      col
+                      s12
+                      center
+                      margined-bottom-comfortable
+                      indigo-text
+                      text-darken-4
+                    "
+                  >
+                    {{ headers[activeHeader] }}
+                  </h4>
+
+                  <div
+                    class="col m1 l2 hide-on-small-only valign-wrapper"
+                    :style="'height: '+ carouselHeight + 'px'"
+                  >
+                    <div class="full-width center">
+                      <div class="btn-floating" @click="carouselPrev">
+                        <i class="material-icons">chevron_left</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m10 l8">
+                    <div
+                      id="featured-carousel"
+                      class="carousel carousel-slider center rounded"
+                      :style="'height: '+ carouselHeight + 'px'"
+                    >
+                      <div class="carousel-item" data-index="0">
+                        <img src="/images/carousel/1.jpg" />
+                      </div>
+                      <div class="carousel-item" data-index="1">
+                        <img src="/images/carousel/2.jpg" />
+                      </div>
+                      <div class="carousel-item" data-index="2">
+                        <img src="/images/carousel/3.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col m1 l2 hide-on-small-only valign-wrapper"
+                    :style="'height: '+ carouselHeight + 'px'"
+                  >
+                    <div class="full-width center">
+                      <div class="btn-floating" @click="carouselNext">
+                        <i class="material-icons">chevron_right</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="col s12 m5">
               <div
                 id="coursework"

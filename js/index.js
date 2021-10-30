@@ -21,6 +21,62 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   })
 
+  const featured = new Vue({
+    el: '#featured',
+    data: {
+      carousel: null,
+      carouselHeight: 600,
+      interval: null,
+
+      headers: [
+        "Singapore India Hackathon 2018",
+        "KPIT Sparkle 2019 - Grand Finale",
+        "Smart India Hackathon 2018 - Winner"
+      ],
+
+      activeHeader: 0,
+    },
+    methods: {
+      initCarouel() {
+        let element = document.getElementById('featured-carousel')
+        console.log(element.clientWidth)
+        this.carouselHeight = (element.clientWidth * 3) / 4
+        this.carousel = M.Carousel.init(element, {
+          fullWidth: true,
+          indicators: true,
+          onCycleTo: this.onCycleTo,
+        })
+        this.startAutoPlay()
+      },
+
+      carouselPrev() {
+        this.carousel.prev()
+      },
+
+      carouselNext() {
+        this.carousel.next()
+      },
+
+      startAutoPlay() {
+        let vm = this
+        this.interval = setInterval(() => {
+          vm.carouselNext()
+        }, 3000)
+      },
+
+      onCycleTo(element) {
+        let index = element.attributes['data-index'].value
+        this.activeHeader = index
+      },
+    },
+    mounted() {
+      this.initCarouel()
+    },
+    destroyed() {
+      clearInterval(this.interval)
+    },
+  })
+
   const vm_coursework = new Vue({
     el: '#coursework',
     data: {
@@ -47,14 +103,15 @@ document.addEventListener('DOMContentLoaded', function () {
               ],
               projects: [
                 {
-                  title: 'Use of Twitter activity data to analyze Circadian Rhythms',
-                  topic: 'Data Science'
+                  title:
+                    'Use of Twitter activity data to analyze Circadian Rhythms',
+                  topic: 'Data Science',
                 },
                 {
                   title: 'Coming soon!',
-                  topic: 'Computer Vision'
-                }
-              ]
+                  topic: 'Computer Vision',
+                },
+              ],
             },
           ],
         },
