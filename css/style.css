@@ -124,3 +124,35 @@ nav {
   cursor: pointer;
   /* Add a pointer on hover */
 }
+
+.photo-scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 300px;
+}
+
+.photo {
+  display: inline-block;
+  height: 300px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.photo-small {
+  margin-bottom: 4px !important;
+}
+
+.photo-column{
+  padding: 4px !important;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}

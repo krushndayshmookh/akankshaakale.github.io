@@ -96,6 +96,12 @@
               </li>
 
               <li>
+                <a class="blue-grey-text text-darken-4" href="#photography">
+                  Photography
+                </a>
+              </li>
+
+              <li>
                 <a class="blue-grey-text text-darken-4" href="#contact">
                   Contact
                 </a>
@@ -147,6 +153,12 @@
         </li>
 
         <li>
+          <a class="blue-grey-text text-darken-4" href="#photography">
+            Photography
+          </a>
+        </li>
+
+        <li>
           <a class="blue-grey-text text-darken-4" href="#contact"> Contact </a>
         </li>
       </ul>
@@ -161,7 +173,7 @@
                 src="/images/akanksha.png"
                 alt="Akanksha Kale"
                 class="responsive-img circle"
-                style="max-width: 40vw;"
+                style="max-width: 40vw"
                 data-aos="zoom-in"
               />
             </div>
@@ -732,6 +744,77 @@
                         </a>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <div
+                id="photography"
+                class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4">photography</span>
+                </h4>
+
+                <div class="row no-margin">
+                  <div
+                    class="
+                      col
+                      s12
+                      photo-scrolling-wrapper
+                      scrollbar-hidden
+                      hide-on-small-only
+                      margined-bottom-compact
+                    "
+                  >
+                    <div
+                      class="photo"
+                      v-for="(photo, index) in photos"
+                      v-if="index % 2 == 0"
+                    >
+                      <img :src="photo" alt="" class="photo" />
+                    </div>
+                  </div>
+
+                  <div
+                    class="
+                      col
+                      s12
+                      photo-scrolling-wrapper
+                      scrollbar-hidden
+                      hide-on-small-only
+                    "
+                  >
+                    <div
+                      class="photo"
+                      v-for="(photo, index) in photos"
+                      v-if="index % 2 == 1"
+                    >
+                      <img :src="photo" alt="" class="photo" />
+                    </div>
+                  </div>
+
+                  <div class="col s6 hide-on-med-and-up photo-column no-margin">
+                    <img
+                      :src="photo"
+                      v-for="(photo, index) in photos"
+                      v-if="index % 2 == 0"
+                      class="full-width photo-small"
+                    />
+                  </div>
+
+                  <div class="col s6 hide-on-med-and-up photo-column no-margin">
+                    <img
+                      :src="photo"
+                      v-for="(photo, index) in photos"
+                      v-if="index % 2 == 1"
+                      class="full-width photo-small"
+                    />
                   </div>
                 </div>
               </div>

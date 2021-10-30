@@ -606,4 +606,25 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     },
   })
+
+  $vm.photography = new Vue({
+    el: '#photography',
+    data: {
+      photos: [
+        'https://picsum.photos/400/300/',
+        'https://picsum.photos/400/200/',
+        'https://picsum.photos/250/300/',
+        'https://picsum.photos/400/300/',
+        'https://picsum.photos/400/400/',
+        'https://picsum.photos/350/400/',
+        'https://picsum.photos/340/400/',
+      ],
+    },
+    mounted() {
+      var elems = document.querySelectorAll('.materialboxed')
+      var instances = M.Materialbox.init(elems, {
+        inDuration: 200,
+      })
+    },
+  })
 })
