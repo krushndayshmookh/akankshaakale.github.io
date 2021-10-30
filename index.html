@@ -685,7 +685,7 @@
                       class="card glass-light rounded z-depth-0 no-margin"
                       data-aos="fade-down"
                     >
-                      <div class="card-image">
+                      <div class="card-image" v-if="project.image">
                         <img
                           :src="project.image"
                           :alt="project.title"
