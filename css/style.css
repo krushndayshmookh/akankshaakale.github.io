@@ -79,3 +79,12 @@ nav {
 .work-logo {
   max-width: 104px !important;
 }
+
+.text-caption {
+  font-size: 0.9rem !important;
+}
+
+.award-icon {
+  padding-left: 15px;
+  padding-top: 48px;
+}

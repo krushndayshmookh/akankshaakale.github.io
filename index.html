@@ -349,7 +349,13 @@
             <div class="col s12 m5">
               <div
                 id="coursework"
-                class="card-panel glass-light z-depth-0 rounded"
+                class="
+                  card-panel
+                  glass-light
+                  z-depth-0
+                  rounded
+                  margined-bottom-compact
+                "
                 data-aos="fade-up"
               >
                 <h4 class="center margined-bottom-comfortable">
@@ -406,6 +412,47 @@
                                 {{ project.title }}
                               </li>
                             </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="awards"
+                class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4">achievements</span>
+                </h4>
+
+                <div class="row no-margin">
+                  <div
+                    class="col-12"
+                    v-for="(award, index) in awards"
+                    :class="{ 'margined-bottom-compact': index != awards.length-1 }"
+                  >
+                    <div
+                      class="card glass-light rounded z-depth-0 no-margin"
+                      data-aos="fade-down"
+                    >
+                      <div
+                        class="card horizontal z-depth-0 no-margin transparent"
+                      >
+                        <div class="card-image award-icon" v-if="award.icon">
+                          <img :src="award.icon" />
+                        </div>
+                        <div class="card-stacked">
+                          <div class="card-content no-padding">
+                            <div class="padded-compact">
+                              <span class="text-caption"> {{ award.date }} </span>
+                            <span class="card-title"> {{ award.event }} </span>
+                            <blockquote v-if="award.position" class="no-margin">{{ award.position }}</blockquote>
+                            <p class="grey-text padded-top-compact">{{ award.description }}</p>
+                            </div>
                           </div>
                         </div>
                       </div>

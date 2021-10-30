@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
       interval: null,
 
       headers: [
-        "Singapore India Hackathon 2018",
-        "KPIT Sparkle 2019 - Grand Finale",
-        "Smart India Hackathon 2018 - Winner"
+        'Singapore India Hackathon 2018',
+        'KPIT Sparkle 2019 - Grand Finale',
+        'Smart India Hackathon 2018 - Winner',
       ],
 
       activeHeader: 0,
@@ -115,6 +115,55 @@ document.addEventListener('DOMContentLoaded', function () {
             },
           ],
         },
+      ],
+    },
+  })
+
+  const awards = new Vue({
+    el: '#awards',
+    data: {
+      awards: [
+        {
+          event: 'Deloitte Spot Award for Automation',
+          date: '2020',
+          position: '1 amongst 500',
+          description: 'Was amongst the very first folks in my project to be recognized for Spot Award for impactful delivery of Automation Framework.',
+          icon: '/images/awards/prize.png',
+        },
+        {
+          event: 'KPIT Sparkle Innovation Challenge ’19',
+          date: '2019',
+          position: 'Gold Medal | Finalist',
+          description: '\'Thought\' controlled Authentication system using EEG headset.',
+          icon: '/images/awards/trophy.png',
+        },
+        {
+          event: 'Smart India Hackthon 2019, IIT BHU',
+          date: '2019',
+          position: '3rd/250 | National',
+          description: 'Intelligent Digital Traffic Management/ Information System using Geo Coordinates',
+          icon: '/images/awards/trophy.png',
+        },
+        {
+          event: 'Singapore India Hackathon, NTU Singapore',
+          date: '2018',
+          position: '2nd Runner Up | International',
+          description: 'A smart solution to monitor and provide visibility on the availability of vacant car park lots within the campus.',
+          icon: '/images/awards/trophy.png',
+        },
+        {
+          event: 'Smart India Hackathon 2018, IIT BHU',
+          date: '2018',
+          position: 'Winner | National',
+          description: 'Collection, analysis, visualization of data regarding water usage and irrigation deficiencies from the data collected from farmers. Provide a platform for irrigation officials to optimize the water distribution in areas facing scarcity.',
+          icon: '/images/awards/trophy.png',
+        },  
+        {
+          event: 'Prime Minister\'s Scholarship',
+          date: '2015-2019',
+          description:'This was awarded to me by the Ministry of Defense throughout my Undergraduate Studies for consistent all round performance in the filed of Computer Science.',
+          icon: '/images/awards/prize.png',
+        }
       ],
     },
   })
