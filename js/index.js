@@ -438,8 +438,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           title: 'PyTorch',
-          image:
-            '/images/skills/pytorch.png',
+          image: '/images/skills/pytorch.png',
         },
         {
           title: 'Jira',
@@ -454,6 +453,62 @@ document.addEventListener('DOMContentLoaded', function () {
       var instances = M.Tooltip.init(elems, {
         position: 'top',
       })
+    },
+  })
+
+  $vm.projects = new Vue({
+    el: '#projects',
+    data: {
+      projects: [
+        {
+          title: 'Intelligent Parking Monitoring',
+          image: '/images/projects/sish.jpg',
+          description: 'NTU, Singapore',
+          link: '',
+          github: '',
+          youtube: 'https://www.youtube.com/watch?v=tivoU7KuZIE',
+        },
+        {
+          title: 'Brain Computer Interface',
+          image: '/images/projects/kpit.jpg',
+          description: 'KPIT Sparkle 2019',
+          link: 'https://www.linkedin.com/posts/akankshaakale_learnwhatmatters-activity-6529625809278341120-E7gw',
+          github: '',
+          youtube: '',
+        },
+        {
+          title: 'Jennifer Page',
+          image: '/images/projects/traffic.PNG',
+          description: 'Apps Designer',
+          link: '',
+          github: '',
+          youtube: '',
+        },
+        {
+          title: 'Parking',
+          image: '/images/projects/parkings.jpg',
+          description: '',
+          link: '',
+          github: '',
+          youtube: '',
+        },
+        {
+          title: 'Hand Sign',
+          image: '/images/projects/handsign.jpg',
+          description: '',
+          link: '',
+          github: '',
+          youtube: '',
+        },
+        {
+          title: 'The Cultural Team',
+          image: '/images/projects/aarohan.jpg',
+          description: '',
+          link: 'https://photos.app.goo.gl/4TimkUJsPzZjNt777',
+          github: '',
+          youtube: '',
+        },
+      ],
     },
   })
 })

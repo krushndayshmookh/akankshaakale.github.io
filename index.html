@@ -152,7 +152,7 @@
       <div class="container">
         <section id="intro" class="section screen-height valign-wrapper">
           <div class="row full-width">
-            <div class="col-12 center">
+            <div class="col s12 center">
               <img
                 src="/images/akanksha.png"
                 alt="Akanksha Kale"
@@ -364,7 +364,7 @@
 
                 <div class="row no-margin">
                   <div
-                    class="col-12"
+                    class="col s12"
                     v-for="(work, index) in courseworks"
                     :class="{ 'margined-bottom-compact': index != courseworks.length-1 }"
                   >
@@ -431,7 +431,7 @@
 
                 <div class="row no-margin">
                   <div
-                    class="col-12"
+                    class="col s12"
                     v-for="(award, index) in awards"
                     :class="{ 'margined-bottom-compact': index != awards.length-1 }"
                   >
@@ -485,7 +485,7 @@
 
                 <div class="row no-margin">
                   <div
-                    class="col-12"
+                    class="col s12"
                     v-for="(experience, index) in experiences"
                     :class="{ 'margined-bottom-compact': index != experiences.length-1 }"
                   >
@@ -557,43 +557,45 @@
           </div>
 
           <div class="row">
-            <div
-              id="publications"
-              class="card-panel glass-light z-depth-0 rounded"
-              data-aos="fade-up"
-            >
-              <h4 class="center margined-bottom-comfortable">
-                <span class="indigo-text text-darken-4">publications</span>
-              </h4>
+            <div class="col s12">
+              <div
+                id="publications"
+                class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4">publications</span>
+                </h4>
 
-              <div class="row no-margin">
-                <div
-                  class="col s12 m6 l4"
-                  v-for="(paper, index) in publications"
-                  :class="{ 'margined-bottom-compact': index != publications.length-1 }"
-                >
+                <div class="row no-margin">
                   <div
-                    class="card glass-light rounded z-depth-0 no-margin"
-                    data-aos="fade-down"
+                    class="col s12 m6 l4"
+                    v-for="(paper, index) in publications"
+                    :class="{ 'margined-bottom-compact': index != publications.length-1 }"
                   >
-                    <div class="card-content center">
-                      <img
-                        class="paper-icon circle margined-bottom-compact"
-                        :src="paper.icon"
-                      />
+                    <div
+                      class="card glass-light rounded z-depth-0 no-margin"
+                      data-aos="fade-down"
+                    >
+                      <div class="card-content center">
+                        <img
+                          class="paper-icon circle margined-bottom-compact"
+                          :src="paper.icon"
+                        />
 
-                      <span class="card-title">{{ paper.title }}</span>
-                      <p class="blue-grey-text">{{ paper.journal }}</p>
-                    </div>
-                    <div class="card-action center">
-                      <a
-                        class="btn-flat indigo white-text no-margin-strict"
-                        :href="paper.url"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Abstract
-                      </a>
+                        <span class="card-title">{{ paper.title }}</span>
+                        <p class="blue-grey-text">{{ paper.journal }}</p>
+                      </div>
+                      <div class="card-action center">
+                        <a
+                          class="btn-flat indigo white-text no-margin-strict"
+                          :href="paper.url"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Abstract
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -602,40 +604,114 @@
           </div>
 
           <div class="row">
-            <div
-              id="skills"
-              class="card-panel glass-light z-depth-0 rounded"
-              data-aos="fade-up"
-            >
-              <h4 class="center margined-bottom-comfortable">
-                <span class="indigo-text text-darken-4">skills</span>
-              </h4>
+            <div class="col s12">
+              <div
+                id="skills"
+                class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4">skills</span>
+                </h4>
 
-              <div class="row no-margin">
-                <div class="col s12 m6 l4">
-                  <img
-                    src="/images/MeCoding.jpg"
-                    alt=""
-                    class="full-width rounded"
-                  />
-                </div>
-                <div class="col s12 m6 l8 center">
-                  <div class="skill" v-for="(skill, index) in skills">
-                    <i
-                      v-if="skill.icon"
-                      :class="skill.icon"
-                      class="skill-icon large tooltipped"
-                      :data-tooltip="skill.title"
-                      data-position="top"
-                    ></i>
+                <div class="row no-margin">
+                  <div class="col s12 m6 l4">
                     <img
-                      v-if="skill.image"
-                      :src="skill.image"
+                      src="/images/MeCoding.jpg"
                       alt=""
-                      class="skill-image tooltipped"
-                      :data-tooltip="skill.title"
-                      data-position="top"
+                      class="full-width rounded"
                     />
+                  </div>
+                  <div class="col s12 m6 l8 center">
+                    <div class="skill" v-for="(skill, index) in skills">
+                      <i
+                        v-if="skill.icon"
+                        :class="skill.icon"
+                        class="skill-icon large tooltipped"
+                        :data-tooltip="skill.title"
+                        data-position="top"
+                      ></i>
+                      <img
+                        v-if="skill.image"
+                        :src="skill.image"
+                        alt=""
+                        class="skill-image tooltipped"
+                        :data-tooltip="skill.title"
+                        data-position="top"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <div
+                id="projects"
+                class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4">
+                    collaborative work
+                  </span>
+                </h4>
+
+                <div class="row no-margin">
+                  <div
+                    class="col s12 m6 l4"
+                    v-for="(project, index) in projects"
+                    :class="{ 'margined-bottom-compact': index != projects.length-1 }"
+                  >
+                    <div
+                      class="card glass-light rounded z-depth-0 no-margin"
+                      data-aos="fade-down"
+                    >
+                      <div class="card-image">
+                        <img :src="project.image" :alt="project.title" class="zoomer" />
+                      </div>
+                      <div class="card-content center">
+                        <span class="card-title">{{ project.title }}</span>
+                        <p class="blue-grey-text">{{ project.description }}</p>
+                      </div>
+                      <div class="card-action center">
+                        <a
+                          class="btn-flat btn-floating teal white-text"
+                          v-if="project.link"
+                          :href="project.link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                        <a
+                          class="btn-flat btn-floating red white-text"
+                          v-if="project.youtube"
+                          :href="project.youtube"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fab fa-youtube"></i>
+                        </a>
+                        <a
+                          class="btn-flat btn-floating black white-text"
+                          v-if="project.github"
+                          :href="project.github"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                          class="btn-flat btn-floating white white-text"
+                          v-if="!project.github && !project.link && !project.youtube"
+                        >
+                          <i class="fas fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
