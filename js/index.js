@@ -281,6 +281,21 @@ document.addEventListener('DOMContentLoaded', function () {
             },
           ],
         },
+
+        {
+          company: 'OSCAR Foundation',
+          logo: '',
+          location: '',
+          positions: [
+            {
+              title: 'Volunteer',
+              description: `
+              During the peak of the pandemic, I volunteered for this thread where I with the help of Oscar foundation, Mumbai taught Mathematics to under-privileged kids so that they do not lack the basic foundation as schools were shut down and private tuitions were not affordable to these students. I taught two kids, Zubia and Sanika, for months and helped them buckle up for their board exams.  
+              `,
+              dates: 'Giving Back',
+            },
+          ],
+        },
       ],
     },
   })
