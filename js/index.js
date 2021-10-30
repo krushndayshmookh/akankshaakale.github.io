@@ -313,4 +313,147 @@ document.addEventListener('DOMContentLoaded', function () {
       ],
     },
   })
+
+  $vm.skills = new Vue({
+    el: '#skills',
+    data: {
+      skills: [
+        {
+          title: 'Python',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+        },
+        {
+          title: 'Java',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+        },
+        {
+          title: 'C++',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
+        },
+        {
+          title: 'JavaScript',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+        },
+        {
+          title: 'Angular',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+        },
+        {
+          title: 'C',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
+        },
+        {
+          title: 'Android',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg',
+        },
+        {
+          title: 'Oracle',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg',
+        },
+        {
+          title: 'MySQL',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+        },
+        {
+          title: 'MongDB',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+        },
+        {
+          title: 'Docker',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+        },
+        {
+          title: 'Amazon Web Services',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
+        },
+        {
+          title: 'Bitbucket',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg',
+        },
+        {
+          title: 'Git',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+        },
+        {
+          title: 'Linux',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+        },
+        {
+          title: 'Visual Studio Code',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+        },
+        {
+          title: 'Arduino',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg',
+        },
+        {
+          title: 'OpenCV',
+          image: '/images/skills/opencv.png',
+        },
+        {
+          title: 'MATLAB',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg',
+        },
+        {
+          title: 'Jupyter',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg',
+        },
+        {
+          title: 'Tensorflow',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+        },
+        {
+          title: 'LaTeX',
+          image: '/images/skills/latex.png',
+        },
+        {
+          title: 'GitHub',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+        },
+        {
+          title: 'Spring',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
+        },
+        {
+          title: 'PyTorch',
+          image:
+            '/images/skills/pytorch.png',
+        },
+        {
+          title: 'Jira',
+          image:
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
+        },
+      ],
+    },
+
+    mounted() {
+      var elems = document.querySelectorAll('.tooltipped')
+      var instances = M.Tooltip.init(elems, {
+        position: 'top',
+      })
+    },
+  })
 })

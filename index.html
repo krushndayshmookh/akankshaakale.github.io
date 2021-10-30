@@ -577,8 +577,11 @@
                     data-aos="fade-down"
                   >
                     <div class="card-content center">
-                      <img class="paper-icon circle margined-bottom-compact" :src="paper.icon" />
-                    
+                      <img
+                        class="paper-icon circle margined-bottom-compact"
+                        :src="paper.icon"
+                      />
+
                       <span class="card-title">{{ paper.title }}</span>
                       <p class="blue-grey-text">{{ paper.journal }}</p>
                     </div>
@@ -592,6 +595,47 @@
                         Abstract
                       </a>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              id="skills"
+              class="card-panel glass-light z-depth-0 rounded"
+              data-aos="fade-up"
+            >
+              <h4 class="center margined-bottom-comfortable">
+                <span class="indigo-text text-darken-4">skills</span>
+              </h4>
+
+              <div class="row no-margin">
+                <div class="col s12 m6 l4">
+                  <img
+                    src="/images/MeCoding.jpg"
+                    alt=""
+                    class="full-width rounded"
+                  />
+                </div>
+                <div class="col s12 m6 l8">
+                  <div class="skill" v-for="(skill, index) in skills">
+                    <i
+                      v-if="skill.icon"
+                      :class="skill.icon"
+                      class="skill-icon large tooltipped"
+                      :data-tooltip="skill.title"
+                      data-position="top"
+                    ></i>
+                    <img
+                      v-if="skill.image"
+                      :src="skill.image"
+                      alt=""
+                      class="skill-image tooltipped"
+                      :data-tooltip="skill.title"
+                      data-position="top"
+                    />
                   </div>
                 </div>
               </div>
