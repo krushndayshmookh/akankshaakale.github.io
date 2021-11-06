@@ -772,11 +772,7 @@
                       margined-bottom-compact
                     "
                   >
-                    <div
-                      class="photo"
-                      v-for="(photo, index) in photos"
-                      v-if="index % 2 == 0"
-                    >
+                    <div class="photo" v-for="(photo, index) in photos">
                       <img :src="photo" alt="" class="photo" />
                     </div>
                   </div>
@@ -790,11 +786,7 @@
                       hide-on-small-only
                     "
                   >
-                    <div
-                      class="photo"
-                      v-for="(photo, index) in photos"
-                      v-if="index % 2 == 1"
-                    >
+                    <div class="photo" v-for="(photo, index) in artwork">
                       <img :src="photo" alt="" class="photo" />
                     </div>
                   </div>
@@ -803,7 +795,6 @@
                     <img
                       :src="photo"
                       v-for="(photo, index) in photos"
-                      v-if="index % 2 == 0"
                       class="full-width photo-small"
                     />
                   </div>
@@ -811,8 +802,7 @@
                   <div class="col s6 hide-on-med-and-up photo-column no-margin">
                     <img
                       :src="photo"
-                      v-for="(photo, index) in photos"
-                      v-if="index % 2 == 1"
+                      v-for="(photo, index) in artwork"
                       class="full-width photo-small"
                     />
                   </div>
