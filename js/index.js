@@ -523,22 +523,22 @@ document.addEventListener('DOMContentLoaded', function () {
           github: '',
           youtube: '',
         },
-        {
-          title: 'The Cultural Team',
-          image: '/images/projects/aarohan.jpg',
-          description: '',
-          link: 'https://photos.app.goo.gl/4TimkUJsPzZjNt777',
-          github: '',
-          youtube: '',
-        },
+        // {
+        //   title: 'The Cultural Team',
+        //   image: '/images/projects/aarohan.jpg',
+        //   description: '',
+        //   link: 'https://photos.app.goo.gl/4TimkUJsPzZjNt777',
+        //   github: '',
+        //   youtube: '',
+        // },
         {
           title: 'Twitter and Circadian Rhythms',
           description: 'More on this soon.',
         },
-        {
-          title: 'Another Computer Vision Project',
-          description: 'More on this soon.',
-        },
+        // {
+        //   title: 'Another Computer Vision Project',
+        //   description: 'More on this soon.',
+        // },
       ],
     },
   })
@@ -615,12 +615,10 @@ document.addEventListener('DOMContentLoaded', function () {
           '/images/gallery/artwork/B612_20160908_094500.jpg',
           '/images/gallery/artwork/B612_20160915_192854.jpg',
           '/images/gallery/artwork/B612_20170104_212107.jpg',
-          '/images/gallery/artwork/graciaPerformance1.jpg',
           '/images/gallery/artwork/IMG_20160906_180107.jpg',
           '/images/gallery/artwork/IMG-20160906-WA0001.jpg',
           '/images/gallery/artwork/IMG-20160906-WA0003.jpg',
           '/images/gallery/artwork/IMG_20160912_164429.jpg',
-          '/images/gallery/artwork/UNADJUSTEDNONRAW_thumb_a3f.jpg',
         ],
         col_2: [
           '/images/gallery/artwork/IMG_20160915_202004.jpg',
@@ -630,15 +628,8 @@ document.addEventListener('DOMContentLoaded', function () {
           '/images/gallery/artwork/IMG_20180116_170653.jpg',
           '/images/gallery/artwork/IMG-20180521-WA0004.jpg',
           '/images/gallery/artwork/IMG_20160915_173858.jpg',
-          '/images/gallery/artwork/UNADJUSTEDNONRAW_thumb_a4c.jpg',
         ],
       },
-    },
-    mounted() {
-      var elems = document.querySelectorAll('#artwork .materialboxed')
-      var instances = M.Materialbox.init(elems, {
-        inDuration: 200,
-      })
     },
   })
 
@@ -665,11 +656,16 @@ document.addEventListener('DOMContentLoaded', function () {
         ],
       },
     },
-    mounted() {
-      var elems = document.querySelectorAll('#photography .materialboxed')
-      var instances = M.Materialbox.init(elems, {
-        inDuration: 200,
-      })
+  })
+
+  $vm.extras = new Vue({
+    el: '#extras',
+    data: {
+      images: [
+        '/images/gallery/aarohan/graciaPerformance1.jpg',
+        '/images/gallery/aarohan/UNADJUSTEDNONRAW_thumb_a3f.jpg',
+        '/images/gallery/aarohan/UNADJUSTEDNONRAW_thumb_a4c.jpg',
+      ],
     },
   })
 })

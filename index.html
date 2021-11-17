@@ -108,6 +108,12 @@
               </li>
 
               <li>
+                <a class="blue-grey-text text-darken-4" href="#extras">
+                  Extras
+                </a>
+              </li>
+
+              <li>
                 <a class="blue-grey-text text-darken-4" href="#contact">
                   Contact
                 </a>
@@ -159,15 +165,17 @@
         </li>
 
         <li>
-          <a class="blue-grey-text text-darken-4" href="#artwork">
-            Artwork
-          </a>
+          <a class="blue-grey-text text-darken-4" href="#artwork"> Artwork </a>
         </li>
 
         <li>
           <a class="blue-grey-text text-darken-4" href="#photography">
             Photography
           </a>
+        </li>
+
+        <li>
+          <a class="blue-grey-text text-darken-4" href="#extras"> Extras </a>
         </li>
 
         <li>
@@ -770,7 +778,7 @@
                 data-aos="fade-up"
               >
                 <h4 class="center margined-bottom-comfortable">
-                  <span class="indigo-text text-darken-4">Artwork</span>
+                  <span class="indigo-text text-darken-4">artwork</span>
                 </h4>
 
                 <div class="row no-margin">
@@ -831,7 +839,7 @@
                 data-aos="fade-up"
               >
                 <h4 class="center margined-bottom-comfortable">
-                  <span class="indigo-text text-darken-4">Photography</span>
+                  <span class="indigo-text text-darken-4">photography</span>
                 </h4>
 
                 <div class="row no-margin">
@@ -845,7 +853,10 @@
                       margined-bottom-compact
                     "
                   >
-                    <div class="photo" v-for="(photo, index) in photography.col_1">
+                    <div
+                      class="photo"
+                      v-for="(photo, index) in photography.col_1"
+                    >
                       <img :src="photo" alt="" class="photo" />
                     </div>
                   </div>
@@ -859,7 +870,10 @@
                       hide-on-small-only
                     "
                   >
-                    <div class="photo" v-for="(photo, index) in photography.col_2">
+                    <div
+                      class="photo"
+                      v-for="(photo, index) in photography.col_2"
+                    >
                       <img :src="photo" alt="" class="photo" />
                     </div>
                   </div>
@@ -878,6 +892,37 @@
                       v-for="(photo, index) in photography.col_2"
                       class="full-width photo-small"
                     />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <div
+                id="extras"
+                class="card-panel glass-light z-depth-0 rounded"
+                data-aos="fade-up"
+              >
+                <h4 class="center margined-bottom-comfortable">
+                  <span class="indigo-text text-darken-4">extras</span>
+                </h4>
+
+                <blockquote>
+                  During my undergraduate, I worked with the Dramatics and
+                  Performing Arts Group called ‘Aarohan’ which means An upward
+                  journey.
+                  <br />
+                  Tried my hands at some painting forms like Flame Painting,
+                  Glue Painting, Paper Cutouts
+                  <br />
+                  Some glimpses are present below. I know I am no pro :P
+                </blockquote>
+
+                <div class="row no-margin">
+                  <div class="col s12 m4" v-for="(photo, index) in images">
+                    <img :src="photo" alt="" class="full-width" />
                   </div>
                 </div>
               </div>
