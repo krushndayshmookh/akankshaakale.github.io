@@ -1,6 +1,20 @@
 let $vm = {}
 
 document.addEventListener('DOMContentLoaded', function () {
+  $vm.intro = new Vue({
+    el: '#intro',
+    data: {
+      soundFile: '/name-pronunciation.aac',
+    },
+
+    methods: {
+      playName() {
+        let audio = new Audio('/name-pronunciation.aac')
+        audio.play()
+      },
+    },
+  })
+
   $vm.nav = new Vue({
     el: '#nav',
     data: {

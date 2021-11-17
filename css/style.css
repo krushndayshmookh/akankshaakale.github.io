@@ -160,3 +160,7 @@ nav {
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
