@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       backgroundClass: 'transparent',
     },
     created() {
-      window.addEventListener('scroll', this.handleScroll)
+      window.addEventListener('scroll', this.handleScroll, { passive: true })
     },
     destroyed() {
       window.removeEventListener('scroll', this.handleScroll)
