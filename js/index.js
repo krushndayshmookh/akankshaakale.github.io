@@ -472,7 +472,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     mounted() {
-      var elems = document.querySelectorAll('.tooltipped')
+      var elems = document.querySelectorAll('#skills .tooltipped')
       var instances = M.Tooltip.init(elems, {
         position: 'top',
       })
@@ -607,40 +607,66 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   })
 
+  $vm.artwork = new Vue({
+    el: '#artwork',
+    data: {
+      artwork: {
+        col_1: [
+          '/images/gallery/artwork/B612_20160908_094500.jpg',
+          '/images/gallery/artwork/B612_20160915_192854.jpg',
+          '/images/gallery/artwork/B612_20170104_212107.jpg',
+          '/images/gallery/artwork/graciaPerformance1.jpg',
+          '/images/gallery/artwork/IMG_20160906_180107.jpg',
+          '/images/gallery/artwork/IMG-20160906-WA0001.jpg',
+          '/images/gallery/artwork/IMG-20160906-WA0003.jpg',
+          '/images/gallery/artwork/IMG_20160912_164429.jpg',
+          '/images/gallery/artwork/UNADJUSTEDNONRAW_thumb_a3f.jpg',
+        ],
+        col_2: [
+          '/images/gallery/artwork/IMG_20160915_202004.jpg',
+          '/images/gallery/artwork/IMG-20160925-WA0007.jpg',
+          '/images/gallery/artwork/IMG_20170204_175108.jpg',
+          '/images/gallery/artwork/IMG_20170208_180141.jpg',
+          '/images/gallery/artwork/IMG_20180116_170653.jpg',
+          '/images/gallery/artwork/IMG-20180521-WA0004.jpg',
+          '/images/gallery/artwork/IMG_20160915_173858.jpg',
+          '/images/gallery/artwork/UNADJUSTEDNONRAW_thumb_a4c.jpg',
+        ],
+      },
+    },
+    mounted() {
+      var elems = document.querySelectorAll('#artwork .materialboxed')
+      var instances = M.Materialbox.init(elems, {
+        inDuration: 200,
+      })
+    },
+  })
+
   $vm.photography = new Vue({
     el: '#photography',
     data: {
-      artwork: [
-        '/images/gallery/artwork/B612_20160908_094500.jpg',
-        '/images/gallery/artwork/B612_20160915_192854.jpg',
-        '/images/gallery/artwork/B612_20170104_212107.jpg',
-        '/images/gallery/artwork/graciaPerformance1.jpg',
-        '/images/gallery/artwork/IMG_20160906_180107.jpg',
-        '/images/gallery/artwork/IMG-20160906-WA0001.jpg',
-        '/images/gallery/artwork/IMG-20160906-WA0003.jpg',
-        '/images/gallery/artwork/IMG_20160912_164429.jpg',
-        '/images/gallery/artwork/IMG_20160915_173858.jpg',
-        '/images/gallery/artwork/IMG_20160915_202004.jpg',
-        '/images/gallery/artwork/IMG-20160925-WA0007.jpg',
-        '/images/gallery/artwork/IMG_20170204_175108.jpg',
-        '/images/gallery/artwork/IMG_20170208_180141.jpg',
-        '/images/gallery/artwork/IMG_20180116_170653.jpg',
-        '/images/gallery/artwork/IMG-20180521-WA0004.jpg',
-        '/images/gallery/artwork/UNADJUSTEDNONRAW_thumb_a3f.jpg',
-        '/images/gallery/artwork/UNADJUSTEDNONRAW_thumb_a4c.jpg',
-      ],
-
-      photos: [
-        '/images/gallery/photos/100CANON - IMG_9702.jpg',
-        '/images/gallery/photos/100CANON - IMG_9745.jpg',
-        '/images/gallery/photos/100CANON - IMG_9746.jpg',
-        '/images/gallery/photos/100CANON - IMG_9951.jpg',
-        '/images/gallery/photos/IMG_20210329_142421.jpg',
-        '/images/gallery/photos/Snapchat-795101144.jpg',
-      ],
+      photography: {
+        col_1: [
+          '/images/gallery/photography/IMG_20181114_200552-02.jpg',
+          '/images/gallery/photography/IMG_20181231_180849-02.jpeg',
+          '/images/gallery/photography/IMG_20190622_113641_470.jpg',
+          '/images/gallery/photography/PicsArt_06-23-09.48.00-02-1.jpg',
+          '/images/gallery/photography/IMG_20181114_203818-02.jpg',
+          '/images/gallery/photography/IMG_20190120_173547_Bokeh__01.jpg',
+        ],
+        col_2: [
+          '/images/gallery/photography/IMG_20200313_191711.jpg',
+          '/images/gallery/photography/IMG-20181114-WA0022-01-1.jpg',
+          '/images/gallery/photography/IMG_20190228_163658-01.jpg',
+          '/images/gallery/photography/IMG_20210414_115327_758.jpg',
+          '/images/gallery/photography/IMG_20181115_102930__01.jpg',
+          '/images/gallery/photography/IMG_20190429_014854.jpg',
+          '/images/gallery/photography/IMG_20210414_120346_179.jpg',
+        ],
+      },
     },
     mounted() {
-      var elems = document.querySelectorAll('.materialboxed')
+      var elems = document.querySelectorAll('#photography .materialboxed')
       var instances = M.Materialbox.init(elems, {
         inDuration: 200,
       })
