@@ -143,12 +143,16 @@ nav {
   margin-bottom: 4px !important;
 }
 
-.photo-column{
+.photo-column {
   padding: 4px !important;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
+}
+
+.rounded-photo {
+  border-radius: 12px;
 }
 
 /* Hide scrollbar for IE, Edge add Firefox */
