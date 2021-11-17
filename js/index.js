@@ -644,6 +644,9 @@ document.addEventListener('DOMContentLoaded', function () {
           '/images/gallery/photography/PicsArt_06-23-09.48.00-02-1.jpg',
           '/images/gallery/photography/IMG_20181114_203818-02.jpg',
           '/images/gallery/photography/IMG_20190120_173547_Bokeh__01.jpg',
+          '/images/gallery/photography/20200705_191244-01.jpg',
+          '/images/gallery/photography/DSC_3758.jpg',
+          '/images/gallery/photography/IMG_20181114_190839.jpg',
         ],
         col_2: [
           '/images/gallery/photography/IMG_20200313_191711.jpg',
@@ -653,6 +656,8 @@ document.addEventListener('DOMContentLoaded', function () {
           '/images/gallery/photography/IMG_20181115_102930__01.jpg',
           '/images/gallery/photography/IMG_20190429_014854.jpg',
           '/images/gallery/photography/IMG_20210414_120346_179.jpg',
+          '/images/gallery/photography/IMG_20190125_232535_125.jpg',
+          '/images/gallery/photography/IMG_20200308_183936.jpg',
         ],
       },
     },
