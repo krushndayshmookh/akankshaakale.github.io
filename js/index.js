@@ -317,21 +317,21 @@ document.addEventListener('DOMContentLoaded', function () {
             'A System and Method to Perform User Activity Using an Electroencephalogram',
           journal: 'Indian Patent Office',
           icon: '/images/publications/1.jpg',
-          link: '/docs/publications/1.pdf', // TODO: Add link
+          link: '/docs/publications/1.pdf',
         },
         {
           title:
             'Recurrent Neural Networks on EEG based Classification for Brain Computer Interface.',
           journal: 'Indian Patent Office',
           icon: '/images/publications/2.jpg',
-          link: '/docs/publications/2.pdf', // TODO: Add link
+          link: '/docs/publications/2.pdf',
         },
         {
           title:
             'A System and Method for Self-Adapting Virtual Structuring Of Unstructured Parking in Real-Time',
           journal: 'Indian Patent Office',
           icon: '/images/publications/3.jpg',
-          link: '/docs/publications/3.pdf', // TODO: Add link
+          link: '/docs/publications/3.pdf',
         },
       ],
     },
