@@ -371,13 +371,22 @@
                       :style="'height: '+ carouselHeight + 'px'"
                     >
                       <div class="carousel-item" data-index="0">
-                        <img src="/images/carousel/1.jpg" />
+                        <img
+                          src="/images/carousel/1.jpg"
+                          alt="Singapore India Hackathon 2018"
+                        />
                       </div>
                       <div class="carousel-item" data-index="1">
-                        <img src="/images/carousel/2.jpg" />
+                        <img
+                          src="/images/carousel/2.jpg"
+                          alt="KPIT Sparkle 2019"
+                        />
                       </div>
                       <div class="carousel-item" data-index="2">
-                        <img src="/images/carousel/3.jpg" />
+                        <img
+                          src="/images/carousel/3.jpg"
+                          alt="Smart India Hackathon 2018"
+                        />
                       </div>
                     </div>
                   </div>
@@ -494,7 +503,7 @@
                         class="card horizontal z-depth-0 no-margin transparent"
                       >
                         <div class="card-image award-icon" v-if="award.icon">
-                          <img :src="award.icon" />
+                          <img :src="award.icon" alt="Award Icon" />
                         </div>
                         <div class="card-stacked">
                           <div class="card-content no-padding">
@@ -548,7 +557,11 @@
                         class="card horizontal z-depth-0 no-margin transparent"
                       >
                         <div class="card-image" v-if="experience.logo">
-                          <img class="work-logo" :src="experience.logo" />
+                          <img
+                            class="work-logo"
+                            :src="experience.logo"
+                            :alt="experience.company + ' Logo'"
+                          />
                         </div>
                         <div class="card-stacked">
                           <div class="card-content no-padding">
@@ -632,6 +645,7 @@
                         <img
                           class="paper-icon circle margined-bottom-compact"
                           :src="paper.icon"
+                          :alt="paper.title + ' Icon'"
                         />
 
                         <span class="card-title">{{ paper.title }}</span>
@@ -668,7 +682,7 @@
                   <div class="col s12 m6 l4">
                     <img
                       src="/images/MeCoding.jpg"
-                      alt=""
+                      alt="Akanksha Coding"
                       class="full-width rounded"
                     />
                   </div>
@@ -684,7 +698,7 @@
                       <img
                         v-if="skill.image"
                         :src="skill.image"
-                        alt=""
+                        :alt="skill.title"
                         class="skill-image tooltipped"
                         :data-tooltip="skill.title"
                         data-position="top"
@@ -795,7 +809,11 @@
                     "
                   >
                     <div class="photo" v-for="(photo, index) in artwork.col_1">
-                      <img :src="photo" alt="" class="photo rounded-photo" />
+                      <img
+                        :src="photo"
+                        alt="Artwork"
+                        class="photo rounded-photo"
+                      />
                     </div>
                   </div>
 
@@ -809,7 +827,11 @@
                     "
                   >
                     <div class="photo" v-for="(photo, index) in artwork.col_2">
-                      <img :src="photo" alt="" class="photo rounded-photo" />
+                      <img
+                        :src="photo"
+                        alt="Artwork"
+                        class="photo rounded-photo"
+                      />
                     </div>
                   </div>
 
@@ -818,6 +840,7 @@
                       :src="photo"
                       v-for="(photo, index) in artwork.col_1"
                       class="full-width photo-small rounded-photo"
+                      alt="Artwork"
                     />
                   </div>
 
@@ -826,6 +849,7 @@
                       :src="photo"
                       v-for="(photo, index) in artwork.col_2"
                       class="full-width photo-small rounded-photo"
+                      alt="Artwork"
                     />
                   </div>
                 </div>
@@ -859,7 +883,11 @@
                       class="photo"
                       v-for="(photo, index) in photography.col_1"
                     >
-                      <img :src="photo" alt="" class="photo rounded-photo" />
+                      <img
+                        :src="photo"
+                        alt="Photography"
+                        class="photo rounded-photo"
+                      />
                     </div>
                   </div>
 
@@ -876,7 +904,11 @@
                       class="photo"
                       v-for="(photo, index) in photography.col_2"
                     >
-                      <img :src="photo" alt="" class="photo rounded-photo" />
+                      <img
+                        :src="photo"
+                        alt="Photography"
+                        class="photo rounded-photo"
+                      />
                     </div>
                   </div>
 
@@ -885,6 +917,7 @@
                       :src="photo"
                       v-for="(photo, index) in photography.col_1"
                       class="full-width photo-small rounded-photo"
+                      alt="Photography"
                     />
                   </div>
 
@@ -893,6 +926,7 @@
                       :src="photo"
                       v-for="(photo, index) in photography.col_2"
                       class="full-width photo-small rounded-photo"
+                      alt="Photography"
                     />
                   </div>
                 </div>
@@ -924,7 +958,11 @@
 
                 <div class="row no-margin">
                   <div class="col s12 m4" v-for="(photo, index) in images">
-                    <img :src="photo" alt="" class="full-width rounded-photo" />
+                    <img
+                      :src="photo"
+                      alt="Aarohan"
+                      class="full-width rounded-photo"
+                    />
                   </div>
                 </div>
               </div>
