@@ -578,7 +578,7 @@ document.addEventListener('DOMContentLoaded', function () {
           message: this.contactInfo.message,
         }
 
-        fetch('https://rootkings-mail-service.herokuapp.com/api/mail', {
+        fetch('https://mails.rootkings.dev/api/mail', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
