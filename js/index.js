@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
           position: '1 in 5000',
           description:
             'For singlehandedly tailoring a custom framework alongside regular deliverables and acquiring additional revenue from the client',
-          icon: '/images/awards/prize.png',
+          icon: 'images/awards/prize.png',
         },
         {
           event: 'Deloitte Spot Award for Automation',
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
           position: '1 amongst 500',
           description:
             'Was amongst the very first folks in my project to be recognized for Spot Award for impactful delivery of Automation Framework.',
-          icon: '/images/awards/prize.png',
+          icon: 'images/awards/prize.png',
         },
         {
           event: 'KPIT Sparkle Innovation Challenge ’19',
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
           position: 'Gold Medal | Finalist',
           description:
             "'Thought' controlled Authentication system using EEG headset.",
-          icon: '/images/awards/trophy.png',
+          icon: 'images/awards/trophy.png',
         },
         {
           event: 'Smart India Hackthon 2019, IIT BHU',
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
           position: '3rd/250 | National',
           description:
             'Intelligent Digital Traffic Management/ Information System using Geo Coordinates',
-          icon: '/images/awards/trophy.png',
+          icon: 'images/awards/trophy.png',
         },
         {
           event: 'Singapore India Hackathon, NTU Singapore',
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
           position: '2nd Runner Up | International',
           description:
             'A smart solution to monitor and provide visibility on the availability of vacant car park lots within the campus.',
-          icon: '/images/awards/trophy.png',
+          icon: 'images/awards/trophy.png',
         },
         {
           event: 'Smart India Hackathon 2018, IIT BHU',
@@ -185,14 +185,14 @@ document.addEventListener('DOMContentLoaded', function () {
           position: 'Winner | National',
           description:
             'Collection, analysis, visualization of data regarding water usage and irrigation deficiencies from the data collected from farmers. Provide a platform for irrigation officials to optimize the water distribution in areas facing scarcity.',
-          icon: '/images/awards/trophy.png',
+          icon: 'images/awards/trophy.png',
         },
         {
           event: "Prime Minister's Scholarship",
           date: '2015-2019',
           description:
             'This was awarded to me by the Ministry of Defense throughout my Undergraduate Studies for consistent all round performance in the filed of Computer Science.',
-          icon: '/images/awards/prize.png',
+          icon: 'images/awards/prize.png',
         },
       ],
     },
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
       experiences: [
         {
           company: 'Stony Brook University',
-          logo: '/images/logos/SBU.png',
+          logo: 'images/logos/SBU.png',
           location: 'New York, USA',
           positions: [
             {
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         {
           company: 'Deloitte Consulting',
-          logo: '/images/logos/Deloitte.png',
+          logo: 'images/logos/Deloitte.png',
           location: 'Mumbai, India',
           positions: [
             {
@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         {
           company: 'Persistent Systems',
-          logo: '/images/logos/Persistent.png',
+          logo: 'images/logos/Persistent.png',
           location: 'Pune, India',
           positions: [
             {
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         {
           company: 'MIT Data Structures Lab',
-          logo: '/images/logos/MIT.jpg',
+          logo: 'images/logos/MIT.jpg',
           location: 'Pune, India',
           positions: [
             {
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         {
           company: 'MIT Robocon Lab',
-          logo: '/images/logos/MIT.jpg',
+          logo: 'images/logos/MIT.jpg',
           location: 'Pune, India',
           positions: [
             {
@@ -330,21 +330,21 @@ document.addEventListener('DOMContentLoaded', function () {
           title:
             'A System and Method to Perform User Activity Using an Electroencephalogram',
           journal: 'Indian Patent Office',
-          icon: '/images/publications/1.jpg',
+          icon: 'images/publications/1.jpg',
           link: '/docs/publications/1.pdf',
         },
         {
           title:
             'Recurrent Neural Networks on EEG based Classification for Brain Computer Interface.',
           journal: 'Indian Patent Office',
-          icon: '/images/publications/2.jpg',
+          icon: 'images/publications/2.jpg',
           link: '/docs/publications/2.pdf',
         },
         {
           title:
             'A System and Method for Self-Adapting Virtual Structuring Of Unstructured Parking in Real-Time',
           journal: 'Indian Patent Office',
-          icon: '/images/publications/3.jpg',
+          icon: 'images/publications/3.jpg',
           link: '/docs/publications/3.pdf',
         },
       ],
@@ -442,7 +442,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           title: 'OpenCV',
-          image: '/images/skills/opencv.png',
+          image: 'images/skills/opencv.png',
         },
         {
           title: 'MATLAB',
@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           title: 'LaTeX',
-          image: '/images/skills/latex.png',
+          image: 'images/skills/latex.png',
         },
         {
           title: 'GitHub',
@@ -475,7 +475,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           title: 'PyTorch',
-          image: '/images/skills/pytorch.png',
+          image: 'images/skills/pytorch.png',
         },
         {
           title: 'Jira',
@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', function () {
       projects: [
         {
           title: 'Intelligent Parking Monitoring',
-          image: '/images/projects/sish.jpg',
+          image: 'images/projects/sish.jpg',
           description: 'NTU, Singapore',
           link: '',
           github: '',
@@ -507,7 +507,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           title: 'Brain Computer Interface',
-          image: '/images/projects/kpit.jpg',
+          image: 'images/projects/kpit.jpg',
           description: 'KPIT Sparkle 2019',
           link: 'https://www.linkedin.com/posts/akankshaakale_learnwhatmatters-activity-6529625809278341120-E7gw',
           github: '',
@@ -515,7 +515,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         // {
         //   title: 'Jennifer Page',
-        //   image: '/images/projects/traffic.PNG',
+        //   image: 'images/projects/traffic.PNG',
         //   description: 'Apps Designer',
         //   link: '',
         //   github: '',
@@ -523,7 +523,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // },
         {
           title: 'Traffic',
-          image: '/images/projects/parkings.jpg',
+          image: 'images/projects/parkings.jpg',
           description: 'Smart India Hackathon 2019',
           link: '',
           github: '',
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
           title: 'Hand Sign Detection',
-          image: '/images/projects/handsign.jpg',
+          image: 'images/projects/handsign.jpg',
           description: '',
           link: '',
           github: '',
@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         // {
         //   title: 'The Cultural Team',
-        //   image: '/images/projects/aarohan.jpg',
+        //   image: 'images/projects/aarohan.jpg',
         //   description: '',
         //   link: 'https://photos.app.goo.gl/4TimkUJsPzZjNt777',
         //   github: '',
@@ -626,22 +626,22 @@ document.addEventListener('DOMContentLoaded', function () {
     data: {
       artwork: {
         col_1: [
-          '/images/gallery/artwork/B612_20160908_094500.jpg',
-          '/images/gallery/artwork/B612_20160915_192854.jpg',
-          '/images/gallery/artwork/B612_20170104_212107.jpg',
-          '/images/gallery/artwork/IMG_20160906_180107.jpg',
-          '/images/gallery/artwork/IMG-20160906-WA0001.jpg',
-          '/images/gallery/artwork/IMG-20160906-WA0003.jpg',
-          '/images/gallery/artwork/IMG_20160912_164429.jpg',
+          'images/gallery/artwork/B612_20160908_094500.jpg',
+          'images/gallery/artwork/B612_20160915_192854.jpg',
+          'images/gallery/artwork/B612_20170104_212107.jpg',
+          'images/gallery/artwork/IMG_20160906_180107.jpg',
+          'images/gallery/artwork/IMG-20160906-WA0001.jpg',
+          'images/gallery/artwork/IMG-20160906-WA0003.jpg',
+          'images/gallery/artwork/IMG_20160912_164429.jpg',
         ],
         col_2: [
-          '/images/gallery/artwork/IMG_20160915_202004.jpg',
-          '/images/gallery/artwork/IMG-20160925-WA0007.jpg',
-          '/images/gallery/artwork/IMG_20170204_175108.jpg',
-          '/images/gallery/artwork/IMG_20170208_180141.jpg',
-          '/images/gallery/artwork/IMG_20180116_170653.jpg',
-          '/images/gallery/artwork/IMG-20180521-WA0004.jpg',
-          '/images/gallery/artwork/IMG_20160915_173858.jpg',
+          'images/gallery/artwork/IMG_20160915_202004.jpg',
+          'images/gallery/artwork/IMG-20160925-WA0007.jpg',
+          'images/gallery/artwork/IMG_20170204_175108.jpg',
+          'images/gallery/artwork/IMG_20170208_180141.jpg',
+          'images/gallery/artwork/IMG_20180116_170653.jpg',
+          'images/gallery/artwork/IMG-20180521-WA0004.jpg',
+          'images/gallery/artwork/IMG_20160915_173858.jpg',
         ],
       },
     },
@@ -652,26 +652,26 @@ document.addEventListener('DOMContentLoaded', function () {
     data: {
       photography: {
         col_1: [
-          '/images/gallery/photography/IMG_20181114_200552-02.jpg',
-          '/images/gallery/photography/IMG_20181231_180849-02.jpeg',
-          '/images/gallery/photography/IMG_20190622_113641_470.jpg',
-          '/images/gallery/photography/PicsArt_06-23-09.48.00-02-1.jpg',
-          '/images/gallery/photography/IMG_20181114_203818-02.jpg',
-          '/images/gallery/photography/IMG_20190120_173547_Bokeh__01.jpg',
-          '/images/gallery/photography/20200705_191244-01.jpg',
-          '/images/gallery/photography/DSC_3758.jpg',
-          '/images/gallery/photography/IMG_20181114_190839.jpg',
+          'images/gallery/photography/IMG_20181114_200552-02.jpg',
+          'images/gallery/photography/IMG_20181231_180849-02.jpeg',
+          'images/gallery/photography/IMG_20190622_113641_470.jpg',
+          'images/gallery/photography/PicsArt_06-23-09.48.00-02-1.jpg',
+          'images/gallery/photography/IMG_20181114_203818-02.jpg',
+          'images/gallery/photography/IMG_20190120_173547_Bokeh__01.jpg',
+          'images/gallery/photography/20200705_191244-01.jpg',
+          'images/gallery/photography/DSC_3758.jpg',
+          'images/gallery/photography/IMG_20181114_190839.jpg',
         ],
         col_2: [
-          '/images/gallery/photography/IMG_20200313_191711.jpg',
-          '/images/gallery/photography/IMG-20181114-WA0022-01-1.jpg',
-          '/images/gallery/photography/IMG_20190228_163658-01.jpg',
-          '/images/gallery/photography/IMG_20210414_115327_758.jpg',
-          '/images/gallery/photography/IMG_20181115_102930__01.jpg',
-          '/images/gallery/photography/IMG_20190429_014854.jpg',
-          '/images/gallery/photography/IMG_20210414_120346_179.jpg',
-          '/images/gallery/photography/IMG_20190125_232535_125.jpg',
-          '/images/gallery/photography/IMG_20200308_183936.jpg',
+          'images/gallery/photography/IMG_20200313_191711.jpg',
+          'images/gallery/photography/IMG-20181114-WA0022-01-1.jpg',
+          'images/gallery/photography/IMG_20190228_163658-01.jpg',
+          'images/gallery/photography/IMG_20210414_115327_758.jpg',
+          'images/gallery/photography/IMG_20181115_102930__01.jpg',
+          'images/gallery/photography/IMG_20190429_014854.jpg',
+          'images/gallery/photography/IMG_20210414_120346_179.jpg',
+          'images/gallery/photography/IMG_20190125_232535_125.jpg',
+          'images/gallery/photography/IMG_20200308_183936.jpg',
         ],
       },
     },
@@ -681,9 +681,9 @@ document.addEventListener('DOMContentLoaded', function () {
     el: '#extras',
     data: {
       images: [
-        '/images/gallery/aarohan/graciaPerformance1.jpg',
-        '/images/gallery/aarohan/UNADJUSTEDNONRAW_thumb_a3f.jpg',
-        '/images/gallery/aarohan/UNADJUSTEDNONRAW_thumb_a4c.jpg',
+        'images/gallery/aarohan/graciaPerformance1.jpg',
+        'images/gallery/aarohan/UNADJUSTEDNONRAW_thumb_a3f.jpg',
+        'images/gallery/aarohan/UNADJUSTEDNONRAW_thumb_a4c.jpg',
       ],
     },
   })
