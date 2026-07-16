@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
           title: 'Amazon Web Services',
           image:
-            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
         },
         {
           title: 'Bitbucket',
