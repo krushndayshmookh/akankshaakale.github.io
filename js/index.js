@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $vm.intro = new Vue({
     el: '#intro',
     data: {
-      soundFile: '/name-pronunciation.aac',
+      soundFile: 'name-pronunciation.aac',
     },
 
     methods: {
